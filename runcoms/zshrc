@@ -10,4 +10,41 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
+eval `gdircolors ~/.dir_colors`
+
+# custom shell prompt via promptline.vim
+source ~/.shell_prompt.sh
+
+# set up z: https://github.com/rupa/z
+. ~/.z.sh
+
+# nicer history
+export HISTSIZE=100000
+export HISTFILE="$HOME/.history"
+export SAVEHIST=$HISTSIZE
+
+# set vim as the default editor
+export EDITOR='vim'
+
+# user configuration
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/home/users/sunil/Development/relcy/tools"
+
+# user aliases
+alias aws10='ssh hduser@relcy-aws10'
+alias aws8='ssh hduser@relcy-aws8'
+alias p0='ssh hduser@relcy-p0'
+alias r0='ssh hduser@relcy-r0'
+
+# git aliases
+alias gaa='git add --all'
+alias gc='git commit --verbose'
+alias gca='git commit --amend --verbose'
+alias gco='git checkout'
+alias gd='git diff'
+alias gl='git l'
+alias gp='git pull'
+alias gpr='git pull --rebase origin master'
+alias gr='git r'
+alias grm='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
+alias gs='git status'
+alias gum="echo 'Resetting master to the latest origin/master...' && git fetch && git update-ref refs/heads/master origin/master"
