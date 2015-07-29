@@ -18,6 +18,10 @@ source ~/.shell_prompt.sh
 # set up z: https://github.com/rupa/z
 . ~/.z.sh
 
+# don't print an error if a pattern for filename generation has no matches
+# fixes adding files to git with wildcards (e.g. via gaa)
+unsetopt NOMATCH
+
 # nicer history
 export HISTSIZE=100000
 export HISTFILE="$HOME/.history"
