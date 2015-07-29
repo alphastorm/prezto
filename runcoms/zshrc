@@ -10,6 +10,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# solarized dark directory colors
 eval `gdircolors ~/.dir_colors`
 
 # custom shell prompt via promptline.vim
@@ -29,6 +30,7 @@ export SAVEHIST=$HISTSIZE
 
 # set vim as the default editor
 export EDITOR='vim'
+export VISUAL=${EDITOR}
 
 # user configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/home/users/sunil/Development/relcy/tools"
