@@ -35,6 +35,9 @@ export VISUAL=${EDITOR}
 # user configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/home/users/sunil/Development/relcy/tools"
 
+# binds
+bindkey "^R" history-incremental-search-backward
+
 # user aliases
 alias aws10='ssh hduser@relcy-aws10'
 alias aws8='ssh hduser@relcy-aws8'
