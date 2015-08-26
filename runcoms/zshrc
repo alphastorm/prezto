@@ -19,6 +19,10 @@ source ~/.shell_prompt.sh
 # set up z: https://github.com/rupa/z
 . ~/.z.sh
 
+# execute the line directly when performing history expansion, instead of
+# performing the expansion and then reloading the line into the buffer
+setopt nohistverify
+
 # don't print an error if a pattern for filename generation has no matches
 # fixes adding files to git with wildcards (e.g. via gaa)
 unsetopt NOMATCH
@@ -41,6 +45,9 @@ bindkey "^R" history-incremental-search-backward
 # user aliases
 alias aws10='ssh hduser@relcy-aws10'
 alias aws8='ssh hduser@relcy-aws8'
+alias esm1='ssh hduser@relcy-esm01'
+alias esm2='ssh hduser@relcy-esm02'
+alias esm3='ssh hduser@relcy-esm03'
 alias p0='ssh hduser@relcy-p0'
 alias r0='ssh hduser@relcy-r0'
 
