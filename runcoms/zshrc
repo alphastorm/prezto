@@ -64,3 +64,7 @@ alias gr='git r'
 alias grm='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
 alias gs='git status'
 alias gum="echo 'Resetting master to the latest origin/master...' && git fetch && git update-ref refs/heads/master origin/master"
+
+# maven aliases
+alias mci='mvn clean compile install'
+alias mcp='mvn clean compile package -DskipTests'
