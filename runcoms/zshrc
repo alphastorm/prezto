@@ -37,19 +37,10 @@ export EDITOR='vim'
 export VISUAL=${EDITOR}
 
 # user configuration
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/home/users/sunil/Development/relcy/tools"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 
 # binds
 bindkey "^R" history-incremental-search-backward
-
-# user aliases
-alias aws10='ssh hduser@relcy-aws10'
-alias aws8='ssh hduser@relcy-aws8'
-alias esm1='ssh hduser@relcy-esm01'
-alias esm2='ssh hduser@relcy-esm02'
-alias esm3='ssh hduser@relcy-esm03'
-alias p0='ssh hduser@relcy-p0'
-alias r0='ssh hduser@relcy-r0'
 
 # git aliases
 alias gaa='git add --all'
@@ -64,7 +55,3 @@ alias gr='git r'
 alias grm='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
 alias gs='git status'
 alias gum="echo 'Resetting master to the latest origin/master...' && git fetch && git update-ref refs/heads/master origin/master"
-
-# maven aliases
-alias mci='mvn clean compile install'
-alias mcp='mvn clean compile package -DskipTests'
