@@ -19,6 +19,9 @@ source ~/.shell_prompt.sh
 # set up z: https://github.com/rupa/z
 . ~/.z.sh
 
+# ignoreeof forces the user to type exit or logout, instead of just pressing ^d
+setopt ignoreeof
+
 # execute the line directly when performing history expansion, instead of
 # performing the expansion and then reloading the line into the buffer
 setopt nohistverify
@@ -36,8 +39,17 @@ export SAVEHIST=$HISTSIZE
 export EDITOR='vim'
 export VISUAL=${EDITOR}
 
+# go
+export GOPATH=${HOME}/Development/go/
+
+# java
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+# maven
+export MAVEN="/usr/local/Cellar/maven/3.3.3/bin"
+
 # user configuration
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="${HOME}/bin:${GOPATH}/bin:${MAVEN}:/usr/local/Cellar/scala/2.11.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 
 # binds
 bindkey "^R" history-incremental-search-backward
