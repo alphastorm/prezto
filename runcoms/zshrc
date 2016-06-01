@@ -54,12 +54,16 @@ export PATH="${HOME}/bin:${GOPATH}/bin:${MAVEN}:/usr/local/Cellar/scala/2.11.7/b
 # binds
 bindkey "^R" history-incremental-search-backward
 
+# history
+alias history="history 0"
+
 # git aliases
 alias gaa='git add --all'
 alias gc='git commit --verbose'
 alias gca='git commit --amend --verbose'
 alias gco='git checkout'
 alias gd='git diff'
+alias gdh='git diff head'
 alias gl='git l'
 alias gp='git pull'
 alias gpr='git pull --rebase origin master'
