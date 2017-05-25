@@ -56,9 +56,6 @@ export MAVEN="/usr/local/Cellar/maven/3.3.3/bin"
 # user configuration
 export PATH="${HOME}/bin:${GOPATH}/bin:${MAVEN}:/usr/local/Cellar/scala/2.11.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 
-# binds
-bindkey "^R" history-incremental-search-backward
-
 # history
 alias history="history 0"
 
