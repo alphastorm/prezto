@@ -39,6 +39,11 @@ export SAVEHIST=$HISTSIZE
 export EDITOR='vim'
 export VISUAL=${EDITOR}
 
+# fzf
+export FZF_DEFAULT_COMMAND='rg -i --files --hidden --follow --glob "!.git/*" --glob "!.DS_Store/*" --glob "!node_modules/*"'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # go
 export GOPATH=${HOME}/Development/go/
 
@@ -56,6 +61,9 @@ bindkey "^R" history-incremental-search-backward
 
 # history
 alias history="history 0"
+
+# vim
+alias v='vim'
 
 # git aliases
 alias gaa='git add --all'
