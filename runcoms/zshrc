@@ -17,7 +17,7 @@ eval `gdircolors ~/.dir_colors`
 source ~/.shell_prompt.sh
 
 # set up z: https://github.com/rupa/z
-. ~/.z.sh
+source /usr/local/etc/profile.d/z.sh
 
 # ignoreeof forces the user to type exit or logout, instead of just pressing ^d
 setopt ignoreeof
