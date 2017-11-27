@@ -18,6 +18,9 @@ zstyle ':prezto:*:*' color 'yes'
 # Use LS_COLORS in zsh's tab completion
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
+# Add additional directories to load prezto modules from
+# zstyle ':prezto:load' pmodule-dirs $HOME/.zprezto-contrib
+
 # Set the Zsh modules to load (man zshmodules).
 # zstyle ':prezto:load' zmodule 'attr' 'stat'
 
