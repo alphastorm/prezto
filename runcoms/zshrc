@@ -45,7 +45,7 @@ export FZF_DEFAULT_COMMAND='rg -i --files --hidden --follow --glob "!.git/*" --g
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # go
-export GOPATH=${HOME}/Development/go/
+export GOPATH="$HOME/gocode"
 
 # java
 export JAVA_HOME=$(/usr/libexec/java_home)
