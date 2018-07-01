@@ -41,7 +41,7 @@ export EDITOR='vim'
 export VISUAL=${EDITOR}
 
 # fzf
-export FZF_DEFAULT_COMMAND='rg -i --files --hidden --follow --glob "!.git/*" --glob "!.DS_Store/*" --glob "!node_modules/*"'
+export FZF_DEFAULT_COMMAND='rg -i --files --hidden --follow --glob "!.git/*" --glob "!.DS_Store/*" --glob "!node_modules/*" --glob "!env/*"'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
