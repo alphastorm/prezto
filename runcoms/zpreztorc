@@ -37,14 +37,14 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'spectrum' \
   'utility' \
+  'ssh' \
   'completion' \
   'screen' \
   'homebrew' \
   'python' \
   'git' \
   'syntax-highlighting' \
-  'history-substring-search' \
-  'prompt'
+  'history-substring-search'
 
 #
 # Autosuggestions
@@ -165,7 +165,7 @@ zstyle ':prezto:module:editor' key-bindings 'vi'
 #
 
 # Set the SSH identities to load into the agent.
-# zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'id_rsa2' 'id_github'
+zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'alpha_id_rsa' 'phab_id_rsa'
 
 #
 # Syntax Highlighting
